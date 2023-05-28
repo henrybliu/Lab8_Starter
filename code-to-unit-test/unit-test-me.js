@@ -1,6 +1,12 @@
 // unit-test-me.js
 
-module.exports = { isPhoneNumber, isEmail, isStrongPassword, isDate, isHexColor };
+module.exports = {
+  isPhoneNumber,
+  isEmail,
+  isStrongPassword,
+  isDate,
+  isHexColor,
+};
 
 // matches valid phone numbers
 function isPhoneNumber(phoneNumber) {
@@ -22,7 +28,7 @@ function isStrongPassword(password) {
   return pwRegex.test(password);
 }
 
-// 	This regular expressions matches dates of the form XX / XX / YYYY where 
+// 	This regular expressions matches dates of the form XX / XX / YYYY where
 // XX can be 1 or 2 digits long and YYYY is always 4 digits long.
 function isDate(date) {
   const dateRegex = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
